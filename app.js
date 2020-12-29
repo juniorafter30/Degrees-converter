@@ -27,19 +27,18 @@ const swap = () => {
 const celToFar = () => {
     if(one.innerText === "°C"){
         fahrenheit = converter.value * 1.8 + 32;
-        result.innerHTML = fahrenheit + '°F';
+        result.innerHTML = `${converter.value}°C = ${fahrenheit}°F `
 
     }else{ 
         celsius = (converter.value - 32) * 1.8;
-        result.innerHTML = celsius + '°C';
-
+        result.innerHTML = `${converter.value}°F = ${celsius}°C`
     }
     
 }
 
 const resetAll = () => {
     converter.value = '';
-    result.value = '';
+    result.innerHTML = '';
 }
 
 
